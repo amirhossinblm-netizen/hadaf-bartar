@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<div class="result-card"><span class="eyebrow">نتیجه آزمون</span><h1>{{ attempt.score }} <small>از {{ attempt.total }}</small></h1><p>درصد پاسخ‌های صحیح: {{ (attempt.score * 100 / attempt.total)|round|int }}٪</p><a class="btn gold" href="{{ url_for('dashboard') }}">بازگشت به داشبورد</a></div>{% endblock %}
